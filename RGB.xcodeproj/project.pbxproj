@@ -13,6 +13,7 @@
 		BAF760DC1F2DB98B00F1E779 /* Curry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAF760DB1F2DB98B00F1E779 /* Curry.framework */; };
 		BAF760DF1F2DB9C100F1E779 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAF760DD1F2DB9C100F1E779 /* Nimble.framework */; };
 		BAF760E01F2DB9C100F1E779 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAF760DE1F2DB9C100F1E779 /* Quick.framework */; };
+		BAF760E41F2DD02700F1E779 /* RGBUIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF760E31F2DD02700F1E779 /* RGBUIColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +36,7 @@
 		BAF760DB1F2DB98B00F1E779 /* Curry.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Curry.framework; path = "Carthage/Checkouts/Curry/build/Debug-iphoneos/Curry.framework"; sourceTree = "<group>"; };
 		BAF760DD1F2DB9C100F1E779 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = "Carthage/Checkouts/Nimble/build/Debug-iphoneos/Nimble.framework"; sourceTree = "<group>"; };
 		BAF760DE1F2DB9C100F1E779 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = "Carthage/Checkouts/Quick/build/Debug-iphoneos/Quick.framework"; sourceTree = "<group>"; };
+		BAF760E31F2DD02700F1E779 /* RGBUIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RGBUIColor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 			children = (
 				BAF760C31F2DB3D500F1E779 /* RGB.h */,
 				BAF760C41F2DB3D500F1E779 /* Info.plist */,
+				BAF760E31F2DD02700F1E779 /* RGBUIColor.swift */,
 			);
 			path = RGB;
 			sourceTree = "<group>";
@@ -169,6 +172,7 @@
 					BAF760BF1F2DB3D500F1E779 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = U7X89BMDK7;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					BAF760C81F2DB3D500F1E779 = {
@@ -218,6 +222,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAF760E41F2DD02700F1E779 /* RGBUIColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +349,7 @@
 		BAF760D51F2DB3D500F1E779 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = U7X89BMDK7;
@@ -357,6 +363,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.akshay.RGB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -364,6 +371,7 @@
 		BAF760D61F2DB3D500F1E779 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = U7X89BMDK7;
@@ -384,6 +392,7 @@
 		BAF760D81F2DB3D500F1E779 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = U7X89BMDK7;
 				FRAMEWORK_SEARCH_PATHS = "";
 				INFOPLIST_FILE = RGBTests/Info.plist;
@@ -397,6 +406,7 @@
 		BAF760D91F2DB3D500F1E779 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = U7X89BMDK7;
 				FRAMEWORK_SEARCH_PATHS = "";
 				INFOPLIST_FILE = RGBTests/Info.plist;
